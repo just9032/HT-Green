@@ -1,0 +1,293 @@
+/* General Styles */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background: url(/images/bg800bulbs.png) repeat;
+    display: flex;
+    justify-content: center;
+}
+
+/* Wrapper for the content */
+.container {
+    width: 80dvw;
+    max-width: auto;
+    background-color: white; /* White background for the content */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    padding: 2em;
+    border-radius: 8px;
+    margin: 2em 0;
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    margin: auto;
+    padding: auto;
+}
+h2 {
+    font-family: "Exo 2", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    color: #000;
+    
+}
+.logo {
+    margin: auto;
+    padding: auto;
+    float: left;
+}
+
+/* nav styling */
+.logo nav ul li h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+nav ul {
+    list-style: none;
+    margin: auto;
+    padding: auto;
+    text-align: center;
+    display: flex;
+    justify-content: right;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1.5em;
+}
+
+nav ul li a {
+    color: rgb(7, 7, 7);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: rgb(204, 8, 8);
+    text-decoration: none;
+}
+
+
+/* Section service */
+section {
+    padding: 1.2em;  
+}
+
+.soln {
+    border-radius: 10px;
+    float: right;
+    margin: 0.5em;
+}
+
+.topcontent {
+    font-family: "Exo 2", sans-serif;
+    font-size: 1.2em;
+}
+.services::before::after {
+    clear: both;
+}
+
+
+
+/* back to top button */
+
+.backtop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2em auto; 
+    padding: 1em; 
+    border-radius: 15px;
+    cursor: pointer;
+    background: rgb(128, 243, 195);
+    text-align: center;
+    width: fit-content; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    border: none; 
+    font-family: "Exo 2", sans-serif; 
+    font-size: 1rem; 
+}
+
+a {
+    font-family:"Exo 2", Courier, monospace;
+    color: inherit;
+}
+
+
+
+/* about section */
+
+.about-container {
+    max-width: 100dvw;
+    margin: 0 auto;
+    background: linear-gradient(to bottom, rgb(247, 216, 175), rgb(248, 181, 35) 100%);
+    padding: 2em;
+    border-radius: 10px;
+}
+
+.about-content p {
+    display: block;
+    column-count: 2;
+    column-width: 1em;
+    column-gap: 3.5em;
+    column-rule: 1px transparent;
+    font-size: 1rem;
+    text-align: justify; 
+    color: #030303;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+
+
+/* Testimonials */
+.testimonials {
+    max-width: 80dvw;
+    margin: 0 auto;
+    padding: 2em;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.testimonials h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.testimonial {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 0.5em solid #f5e3e3;
+    padding: 1em 0;
+}
+
+.testimonial img {
+    width: auto;  /* Adjust image size */
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-left: 1em solid #2ecc71; /* Green border on the left */
+}
+
+.testimonial-text {
+    align-items: center;
+    margin-left: 1em;
+    margin-top: 3em; /* Start text 3 lines below its start point */
+}
+
+
+.testimonial p {
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+    margin: 0 0 0.5em;
+}
+
+.testimonial strong {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+
+/* resources */
+.resources {
+    max-width: 100dvw;
+    margin: 0 auto;
+    background: linear-gradient(to bottom, rgb(247, 216, 175), rgb(216, 243, 117) 100%);
+    padding: 2em;
+    border-radius: 10px;
+}
+.resources-text {
+    font-family: "Exo 2", sans-serif;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.resourcess {
+    padding: 2em;
+    border-radius: 10px;
+    display: block;
+    column-count: 2;
+    column-width: 2.5em;
+    column-gap: 2.5em;
+    column-rule: 1px transparent;
+}
+.resources-section {
+    font-size: 0.9rem;
+    text-align: justify; 
+    color: #030303;
+    margin-bottom: 0.8em;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 3.5em;
+}
+
+ul li {
+    margin-bottom: 1%;
+}
+
+
+
+
+/* footer */
+
+.footcontent {
+    text-align: center;
+}
+footer {
+    color: rgb(8, 8, 8);
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 2em 30em;
+}
+
+.footer-section {
+    
+    flex: auto;
+    min-width: 250px;
+    padding: 10px;
+    font-family: "Exo 2", sans-serif;
+    font-size: 0.8em;
+    font-weight: bold;
+    list-style: none;
+    padding: 0;
+}
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footnote {
+    margin: auto;
+    padding: auto;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em; /* Separate each icon by 5em */
+    margin: 0.1em 0;
+    padding: 1em;
+}
+
+.footer-bottom p {
+    margin: 10px 0;
+    color: rgb(62, 6, 136);
+}
+.footer-bottom {
+    text-align: center;
+}
